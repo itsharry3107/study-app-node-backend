@@ -16,7 +16,7 @@
     "test": "echo \"No test specified\" && exit 0",
     "docs": "typedoc",
     "docs:deploy": "gh-pages -d docs",
-    "release": "npm run build && npm run version && npm run docs && git push --follow-tags origin main"
+    "release": "npm run build && npm run version && npm run docs && npm run docs:deploy && git push --follow-tags origin main"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",

@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "npx tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
@@ -20,9 +20,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
+    "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
     "@typescript-eslint/eslint-plugin": "^8.30.1",
     "@typescript-eslint/parser": "^8.30.1",
+    "dotenv": "^16.5.0",
     "eslint": "^9.24.0",
     "gh-pages": "^6.3.0",
     "husky": "^9.1.7",
@@ -46,5 +48,9 @@
       "tag": false
     },
     "commitAll": true
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
   }
 }

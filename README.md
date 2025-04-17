@@ -17,11 +17,7 @@ This is the backend API service for the Study App, built with TypeScript. It’s
 ### 1. Clone the Repository
 
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/rit3zh/study-app-node-backend.git
-=======
-git clone https://github.com/your-username/study-app-node-backend.git
->>>>>>> 9144fa0 (Updated README)
 cd study-app-node-backend
 ```
 

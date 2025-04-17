@@ -1,0 +1,11 @@
+{
+  "entryPoints": ["src"],
+  "out": "docs",
+  "tsconfig": "tsconfig.json",
+  "readme": "README.md",
+  "excludePrivate": true,
+  "excludeInternal": true,
+  "excludeExternals": true,
+  "includeVersion": true,
+  "hideGenerator": true
+}

@@ -6,7 +6,7 @@ This is the backend API service for the Study App, built with TypeScript. It’s
 
 ## 📦 Features
 
-- 🚀 Fast development with `ts-node-dev`
+- 🚀 Fast development with `tsx`
 - 🧼 Linting with ESLint + Husky Git hooks
 - 🔐 Semantic versioning with `standard-version`
 - 📘 Auto-generated documentation with TypeDoc
@@ -33,7 +33,10 @@ npm install
 npm run dev
 ```
 
-This uses `ts-node-dev` for live reloading.
+This uses `tsx` for live reloading.
+
+> [!IMPORTANT]
+> Please have a look in the `.env.example`. Make a .env file and replace `MONGODB_URL` with the MongoDB URL.
 
 ---
 

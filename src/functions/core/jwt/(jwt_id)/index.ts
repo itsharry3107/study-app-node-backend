@@ -5,7 +5,7 @@ const JWT_SECRET = process.env.JWT_SECRET!;
 
 export const generateToken = (
   firebaseUid: string,
-  expiration?: string
+  expiration: string = "1h"
 ): string => {
   return jwt.sign({ uid: firebaseUid }, JWT_SECRET, {
     expiresIn: expiration as StringValue,

@@ -12,8 +12,14 @@ export class UserAuthRouter {
   }
 
   private init() {
-    this.router.post("/register", (req, res) =>
-      initializeControllers(new UserAuthController(req, res))
-    );
+    this.router.post("/register", (req, res) => {
+      initializeControllers(new UserAuthController(req, res));
+    });
+  
+    this.router.post("/login", (req, res) => {
+      initializeControllers(new UserAuthController(req, res));
+    });
   }
-}
+  
+  }
+

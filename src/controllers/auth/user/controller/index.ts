@@ -26,12 +26,12 @@ export class UserAuthController {
   }
   private async handleLogin() {
     try {
-      const { email, password } = this.request.body;
+      const {email, password } = this.request.body;
   
       if (!email || !password) {
         return this.response.status(400).json({ error: "Email and password are required." });
       }
-  
+
       const user = await findUserByFirebaseUid(email);
       if (!user) {
         return this.response.status(404).json({ error: "User not found." });
@@ -55,7 +55,7 @@ export class UserAuthController {
     } catch (error: any) {
       console.error("[User Login Error]", error.message);
       return this.response.status(500).json({ error: "Server error" });
-    }
+    } 
   }
   
   use = async (): Promise<any | void> => await this.initialize();

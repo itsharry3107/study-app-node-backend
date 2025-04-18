@@ -1,8 +1,6 @@
 import { Express as ExpressApp } from "express";
 import type { App, Routes } from "../../typings";
 import { config } from "../../config";
-
-// Utils
 import { mapAndRegisterRouters } from "../../utils/mapRouters";
 import { routes } from "../../conf/routes";
 import { connectDB } from "../../core";

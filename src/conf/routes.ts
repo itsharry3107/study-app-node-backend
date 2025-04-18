@@ -1,5 +1,5 @@
-import { HomeRouter } from "../routers";
+import { HomeRouter, UserAuthRouter } from "../routers";
 
 import type { Routes } from "../typings";
 
-export const routes: Routes[] = [new HomeRouter()];
+export const routes: Routes[] = [new HomeRouter(), new UserAuthRouter()];
